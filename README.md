@@ -100,10 +100,13 @@ The components used in this approach
 	Chef::Log.info("Worker Joining Swarm with command #{swarmJoinCommand}")
 	shell = Mixlib::ShellOut.new("#{swarmJoinCommand}")
 	shell.run_command
-	Chef::Log.info("Worker Joined Swarm "+ shell.stdout)	
+	Chef::Log.info("Worker Joined Swarm "+ shell.stdout)
+	
+##### example command to execute recipes
+	chef-solo -j <path to json> -r <url to the cookbook tar file>
 
-## Enhancements
-The cookbook can be further enhanced to support autoscaling of the worker/manager nodes and provide support for TLS for master/worker node communication. To support auto scaling one of the methodologies that could be used is to put all the manager addresses into the dynamo db and identify the manager which is up and running, this is needed since the original node may not be up and running and the swarm might have selected a new leader.
+## Further Enhancements
+The cookbook can be further enhanced to support autoscaling of the worker/manager nodes and provide support for TLS for master/worker node communication. To support auto scaling one of the methodologies that could be followed is to put all the manager addresses into the dynamo db and identify the manager which is up and running, this is needed since the original leader node may not be up and running and the swarm might have selected a new leader.
 
 Cookbooks can be provided further configuration parameters such as port numbers, db table names e.t.c
 
