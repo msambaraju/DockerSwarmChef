@@ -1,0 +1,10 @@
+{
+    "Item": {
+        "TokenKey": {
+            "S": "ManagerToken"
+        }, 
+        "TokenCode": {
+            "S": "XXXXXXXXXXXX"
+        }
+    }
+}

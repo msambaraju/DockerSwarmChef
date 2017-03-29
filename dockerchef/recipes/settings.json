@@ -1,0 +1,9 @@
+{
+  "swarmname": "TestSwarm",
+  "run_list": [
+	  "recipe[dockerchef::default]",
+	  "recipe[dockerchef::settings]",
+	  "recipe[dockerchef::swarminit]",
+	  "recipe[dockerchef::addtokens]"
+  ]
+}
