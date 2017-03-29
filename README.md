@@ -12,7 +12,7 @@ The below illustrates the architecture.
 
 <img src="DockerSwarm.jpg" width="400" height="400" />
 
-The components used in this approach
+##### Tools and services used in this approach
 
 * **AWS S3**:  S3 service is used to store the packaged cook books which will be used by Opsworks/chef-solo to execute the recipes, alternatively any source code repository such as github can be used. <br><br>
 
