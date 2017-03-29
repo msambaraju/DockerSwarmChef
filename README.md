@@ -10,7 +10,7 @@ The architecture uses aws dynamo db for storing the swarm related metadata. Dock
 
 The below illustrates the architecture.
 
-<img src="DockerSwarm.jpg" width="500" height="500" />
+<img src="DockerSwarm.jpg" width="400" height="400" />
 
 The components used in this approach
 
